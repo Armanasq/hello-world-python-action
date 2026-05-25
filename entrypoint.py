@@ -10,4 +10,4 @@ github_output = os.environ.get("GITHUB_OUTPUT")
 
 if github_output:
     with open(github_output, "a") as f:
-        f.write(f"current_time={datetime.now(timezone.utc).isoformat()}")
+        f.write(f"time={datetime.now(timezone.utc).isoformat()}")
